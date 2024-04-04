@@ -2,7 +2,27 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-    "title": "Unite Submit",
-    "details":"Um evento para quem é apaixonado por programação",
-    "maximumAttendees": 100
+    "title": "Novo evento",
+    "details":null,
+    "maximumAttendees": 1
 }
+
+
+###
+POST http://localhost:3333/events/7c856c4a-4f3e-4726-991b-1fa12c5c89a5/attendees
+Content-Type: application/json
+
+{
+    "name": "Gildean Morais",
+    "email": "gildean.m@gmail.com"
+}
+
+
+###
+GET http://localhost:3333/events/7c856c4a-4f3e-4726-991b-1fa12c5c89a5
+
+
+###
+GET http://localhost:3333/attendees/1/badge
+
+
